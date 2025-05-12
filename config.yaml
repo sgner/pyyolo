@@ -1,0 +1,29 @@
+# config.yaml
+models:
+  nano:
+    url: "https://github.com/ultralytics/assets/releases/download/v8.2.0/yolov8n-cls.pt"
+    path: "models/yolov8n-cls.pt"
+    size: 6.1
+    input_size: 640
+    description: "轻量级快速推理模型"
+
+  small:
+    url: "https://github.com/ultralytics/assets/releases/download/v8.2.0/yolov8s-cls.pt"
+    path: "models/yolov8s-cls.pt"
+    size: 21.3
+    input_size: 640
+    description: "平衡精度与速度"
+
+  medium:
+    url: "https://github.com/ultralytics/assets/releases/download/v8.2.0/yolov8m-cls.pt"
+    path: "models/yolov8m-cls.pt"
+    size: 49.7
+    input_size: 640
+    description: "高精度推理模型"
+
+app_settings:
+  server_port: 7870
+  server_name: "0.0.0.0"
+  default_model: "nano"
+  max_batch_size: 10
+  allowed_extensions: [".jpg", ".jpeg", ".png"]
